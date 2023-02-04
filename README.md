@@ -1,2 +1,2 @@
-# equivalent
-number to word
+# Equivalent
+  * Convert a number to its equivalent word using Python
