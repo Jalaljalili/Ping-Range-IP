@@ -30,3 +30,22 @@ Enter IP range to scan (e.g. 172.16.96.1/24): 172.16.96.1/24
 
 The script will then ping all of the IP addresses in the range and write the results to a CSV file named `ping_results.csv`. The file will be located in the same directory as the script.
 
+## Example Output
+
+| IP Address   | Result   |
+|--------------|----------|
+| 172.16.96.1   | Success  |
+| 172.16.96.2   | Failure  |
+| 172.16.96.3   | Success  |
+| 172.16.96.4   | Failure  |
+| 172.16.96.5   | Success  |
+| 172.16.96.6   | Success  |
+| 172.16.96.7   | Failure  |
+| ...          | ...      |
+
+## Limitations
+
+The script currently only supports IPv4 addresses. IPv6 addresses are not supported.
+
+
+
