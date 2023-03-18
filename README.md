@@ -48,4 +48,24 @@ The script will then ping all of the IP addresses in the range and write the res
 The script currently only supports IPv4 addresses. IPv6 addresses are not supported.
 
 
+# Bash script for pinging IP addresses in a range
+This bash script allows you to ping all the IP addresses in a specified range and writes the results to a CSV file.
+
+## Usage
+
+To use the script, simply run it from the command line:
+
+```bash
+./ping_range.sh
+```
+You will be prompted to enter the IP range you wish to scan. The range should be entered in the format <first_ip>-<last_ip>. For example, to scan the range 192.168.1.1 to 192.168.1.254, you would enter:
+```bash
+192.168.1.1-254
+```
+The script will then ping each IP address in the range and write the results to a CSV file named ping_results.csv.
+
+## Improvements
+
+In this updated version of the script, each ping command is run in the background using {} and &, which allows all the pings to be run simultaneously. This makes the script much faster than the previous version, which ran each ping command sequentially.
+
 
